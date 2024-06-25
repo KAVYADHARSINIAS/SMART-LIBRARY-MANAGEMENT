@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+          font-family:'Poppins', sans-serif;
+        }
+        body{
+            background-color:white;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        #sidebar {
+            height: 100vh;
+            width: 330px;
+            color: #fff;
+            box-sizing: border-box;
+            font-size: 18px;
+            line-height: 150%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0px 20px 20px 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .left-top {
+            flex: 0.20;
+            background-color: rgba(12, 53, 106, 1);
+        }
+
+        .left-bottom {
+            flex: 0.85;
+            background-color: #30A2FF;
+            padding: 30px;
+            padding-top: 50px;
+        }
+
+        .circle1 {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-top: -120px;
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        #footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        #sidebar li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 19px;
+            font-size: 17px;
+        }
+
+        #sidebar ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        .img {
+            width: 12%;
+            height: 4%;
+            padding-right: 20px;
+
+        }
+
+        .developed-by{
+            background-color:white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin-left: 200px;
+        }
+        .container{
+            height:450px;
+            width:600px;
+            background-color:rgba(48, 162, 255, 1);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+        }
+        .img5{
+            height:125px ;
+            width:125px;
+            border-radius:50%;
+        }
+        table{
+            height:70px;
+            width:600px;
+            padding:20px;
+        }
+        .ring{
+            height:135px ;
+            width:135px;
+            background-color:white;
+            border-radius:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      
+              
+        .overlay{
+            position: absolute;
+            top:0;
+            left: 0;
+            right:0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            background: black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color:white;
+            text-align: center;
+            font-size: 13px;
+        }
+        .con-txt{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:135px ;
+            width:135px;
+            border: 50%;
+            transform:translate(-2%,-2%);
+        }
+        .con-txt:hover .overlay{
+            opacity: 0.8;
+        }
+        .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+#sidebar ul li a:hover{
+        color:white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+
+        </style>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="left-top">
+        </div>
+        <div class="left-bottom">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8V1YRVsyWYm9waoyPrvuW6N69jeXwZ2pXRw&usqp=CAU" class="circle1" align="center">
+            <h2>STUDENT</h2>
+            <ul>
+                <li> <li><img src="https://cdn-icons-png.flaticon.com/128/2636/2636428.png" class="img"><a href="student_profile.php" style="color:white;">Profile</a></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/7322/7322265.png" class="img"><a href="catalog.php">Book Catalog</a></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/2645/2645897.png" class="img"><a href="search_catalog.php">Reservation</a></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/1001/1001425.png" class="img"><a href="student_fine.php">Fines and Dues</a></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/128/3503/3503786.png" class="img"><a href="">Notification</a></li>
+                <li> <img src="https://cdn-icons-png.flaticon.com/128/3503/3503827.png" class="img"><a href="develped_by.html">Developed by</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="developed-by" align="center">
+    
+    <div class="container">
+        <div class="table-container"><center><table>
+           
+            
+            <tr align="center">
+                <td colspan="2"><div class="con-txt"><div class="ring"><img src="sumi.img.jpg" class="img5"></div>
+                    <div class="overlay">
+                        <div class="content">
+                        <p>Pooja N<br>II-Year<br>CSE</p>
+                        </div>
+                    </div></div>
+                </td>
+            </tr>
+            <tr align="center">
+                <td><div class="con-txt"><div class="ring"><img src="kavya.img.jpg" class="img5"></div>
+                    <div class="overlay">
+                        <div class="content">
+                        <p>KAVYADHARSINI A S<br>II-Year<br>CSE</p>
+                        </div></div>
+                    </div>
+                </td>
+                
+            </tr>
+        </table></center></div>
+    
+
+    </div>
+    </div>
+   
+    +
+</body>
+</html>
